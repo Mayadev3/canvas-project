@@ -17,26 +17,31 @@ body {
 h1 {
   font-family: "Lobster", cursive;
   color: #31c48d;
-  font-size: 40px;
-  width: 200px;
-  padding: 23px;
-  margin: 0;
+  font-size: 33px;
+  margin-left: 300px;
 }
 canvas {
-  border: 2px solid #7edce2;
-  margin-top: -260px;
+  border: 2px solid #1e429f;
+  margin-top: -120px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .toolbar {
-  background-color: #7edce2;
+  background-color: #1e429f;
   width: 803px;
-  padding: 6px;
+  padding: 9px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 .toolbar > * {
   border: none;
   background-color: white;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
 }

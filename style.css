@@ -1,15 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   box-sizing: border-box; /*so padding and border doesnt effect the width and height of the element*/
 }
-
 body {
-  font-family: "Roboto", sand-serif;
   margin: 0;
   min-height: 100vh; /* we need to assign a height so the items knows where to center*/
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /*so there are no scroll bars visible*/
+}
+h1 {
+  font-family: "Lobster", cursive;
+  color: #31c48d;
+  font-size: 40px;
+  width: 200px;
+  padding: 23px;
+  margin: 0;
+}
+canvas {
+  border: 2px solid #7edce2;
+  margin-top: -260px;
+}
+.toolbar {
+  background-color: #7edce2;
+  width: 803px;
+  padding: 6px;
+}
+.toolbar > * {
+  border: none;
+  background-color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
 }

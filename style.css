@@ -6,6 +6,10 @@ body {
   margin: 0;
   min-height: 100vh; /* we need to assign a height so the items knows where to center*/
 }
+.header {
+  display: flex;
+  margin-top: 7px;
+}
 .container {
   width: 100%;
   min-height: 100vh;
@@ -16,18 +20,18 @@ body {
 }
 h1 {
   font-family: "Lobster", cursive;
-  color: #31c48d;
-  font-size: 33px;
+  color: #e74694;
+  font-size: 35px;
   margin-left: 300px;
 }
 canvas {
-  border: 2px solid #1e429f;
+  border: 2px solid #9061f9;
   margin-top: -120px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 .toolbar {
-  background-color: #1e429f;
+  background-color: #9061f9;
   width: 803px;
   padding: 9px;
   border-bottom-left-radius: 6px;
@@ -44,4 +48,6 @@ canvas {
   align-items: center;
   cursor: pointer;
   border-radius: 3px;
+  color: #0694a2;
+  font-family: "Lobster", cursive;
 }

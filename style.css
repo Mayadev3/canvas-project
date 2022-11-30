@@ -31,24 +31,29 @@ canvas {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-.toolbar {
+.toolbox {
   background-color: #9061f9;
   width: 803px;
-  padding: 9px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  display: flex;
+  padding: 9px;
 }
-.toolbar > * {
-  border: none;
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-  display: inline-flex;
+.toolbox > * {
+  display: inline-flex; /*the container of each single item is a parent and puts the - + 20 and x horizentally aligned on one line together*/
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  margin: 2px;
+  background-color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
   border-radius: 3px;
   color: #0694a2;
   font-family: "Lobster", cursive;
+  font-size: 18px;
+  cursor: pointer;
+}
+.toolbox > *:last-child {
+  margin-left: auto;
 }

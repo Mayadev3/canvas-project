@@ -5,6 +5,7 @@
 body {
   margin: 0;
   min-height: 100vh; /* we need to assign a height so the items knows where to center*/
+  background-color: #f5f5f5;
 }
 .header {
   display: flex;

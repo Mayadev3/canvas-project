@@ -27,13 +27,13 @@ h1 {
 }
 canvas {
   border: 2px solid #9061f9;
-  margin-top: -120px;
+  margin-top: -70px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 .toolbox {
   background-color: #9061f9;
-  width: 803px;
+  width: 905px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   display: flex;

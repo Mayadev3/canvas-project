@@ -7,4 +7,4 @@ Coding achievements:
 
 - utilized the canvas API to draw lines and circles
 - used multiple event listeners with different mouse events for drawing
-- imported google fonts and embeded Giphys to create an attractive UX/UI design
+- imported google fonts, embeded Giphys and adjusted the margins to create an attractive UX/UI design

@@ -1,3 +1,5 @@
+/* for the drawing project we created the drawing functions first, then the event listeners with the mouse, then the button events */
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 

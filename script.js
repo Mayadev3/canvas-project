@@ -7,6 +7,7 @@ const clearBtn = document.getElementById("clear");
 const colorEl = document.getElementById("color");
 const sizeEl = document.getElementById("size");
 
+// those variables are global because they will keep changing and will be used in different ways in different functions
 let size = 10;
 let isPressed = false;
 let color = "black";
@@ -39,6 +40,7 @@ canvas.addEventListener("mousemove", (e) => {
     drawLine(x, y, x2, y2);
     x = x2;
     y = y2;
+    //the variables are equal so that what is drawn is nsync with where i am pressing, otherwise it keeps drawing lines from the first point to the second point
   }
 });
 
@@ -51,29 +53,29 @@ function drawCircle(x, y) {
 
 function drawLine(x1, y1, x2, y2) {
   ctx.beginPath();
-  ctx.moveTo(x1, y1);
+  ctx.moveTo(x1, y1); // when you move your hand off the paper and to the point you want to start with
   ctx.lineTo(x2, y2);
   ctx.strokeStyle = color;
-  ctx.lineWidth = size * 2;
+  ctx.lineWidth = size * 2; //multiplied by 2 because when drawing the line was too small cause it is equal to the radius so i doubled the size
   ctx.stroke();
 }
 
 colorEl.addEventListener("change", (e) => (color = e.target.value));
 
 increaseBtn.addEventListener("click", (e) => {
-  size += 5;
+  size += 5; // it keeps adding 5
 
   if (size > 50) {
-    size = 50;
+    size = 50; // so it doesnt go above 50
   }
   sizeEl.innerHTML = size;
 });
 
 decreaseBtn.addEventListener("click", (e) => {
-  size -= 5;
+  size -= 5; // it keeps subtracting 5
 
   if (size < 5) {
-    size = 5;
+    size = 5; //so it doesnt go below 5
   }
   sizeEl.innerHTML = size;
 });

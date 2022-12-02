@@ -8,3 +8,10 @@ Coding achievements:
 - utilized the canvas API to draw lines and circles
 - used multiple event listeners with different mouse events for drawing
 - imported google fonts, embeded Giphys and adjusted the margins to create an attractive UX/UI design
+
+Demo link: https://glittering-kitten-369005.netlify.app/
+
+
+
+https://user-images.githubusercontent.com/107764065/205310196-df6e7925-2c8a-408f-910b-a705dd916c40.mp4
+
